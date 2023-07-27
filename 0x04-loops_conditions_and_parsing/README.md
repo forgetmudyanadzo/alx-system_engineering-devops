@@ -63,6 +63,10 @@ Requirements:
 
 You must use the while loop (for and until are forbidden)
 You must use the if, elif and else statements
+For the most curious:
+
+8 in the Chinese culture
+4 in the Chinese culture
 
 6. Superstitious numbers
 Write a Bash script that displays numbers from 1 to 20 and:
