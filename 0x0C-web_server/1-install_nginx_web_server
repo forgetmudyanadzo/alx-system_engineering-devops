@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# transfers a file from a client to a server with scp
+
+# Updating Packages before making Installations
+sudo apt-get update
+sudo apt-get -y install nginx
+
+# Configuring the Uncomplicated Firewall (UFW) to allow incoming traffic for the Nginx HTTP service
+sudo ufw allow 'Nginx HTTP'
+
+# Creating an index.html page
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Testing Nginx configurations for Syntax errors
+sudo nginx -t
+
+# Reloading Nginx
+sudo service nginx start
